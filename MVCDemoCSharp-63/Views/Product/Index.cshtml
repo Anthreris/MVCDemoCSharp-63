@@ -14,6 +14,7 @@
     @foreach (var product in @Model)
     {
         <tr>
+            <td><a href=/Product/ViewProduct/@product.ProductID>@product.ProductID</a></td>
             <td>@product.ProductID</td>
             <td>@product.Name</td>
             <td>@product.Price</td>

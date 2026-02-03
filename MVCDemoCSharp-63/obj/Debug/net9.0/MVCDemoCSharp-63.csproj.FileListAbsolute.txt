@@ -114,3 +114,4 @@ C:\Users\Garrett Chitwood\Desktop\repos\MVCDemoCSharp-63\MVCDemoCSharp-63\bin\De
 C:\Users\Garrett Chitwood\Desktop\repos\MVCDemoCSharp-63\MVCDemoCSharp-63\bin\Debug\net9.0\runtimes\win\lib\net8.0\System.Windows.Extensions.dll
 C:\Users\Garrett Chitwood\Desktop\repos\MVCDemoCSharp-63\MVCDemoCSharp-63\obj\Debug\net9.0\MVCDemoCSharp-63.csproj.AssemblyReference.cache
 C:\Users\Garrett Chitwood\Desktop\repos\MVCDemoCSharp-63\MVCDemoCSharp-63\obj\Debug\net9.0\MVCDemoC.9DCAE639.Up2Date
+C:\Users\Garrett Chitwood\Desktop\repos\MVCDemoCSharp-63\MVCDemoCSharp-63\obj\Debug\net9.0\MVCDemoCSharp-63.sourcelink.json
