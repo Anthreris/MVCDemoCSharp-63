@@ -22,6 +22,10 @@ public class ProductController : Controller
     public IActionResult ViewProduct(int id)
     {
         var product = _repo.GetProduct(id);
+        if (product == null)
+        {
+            return NotFound();
+        }
         return View(product);
     }
 
@@ -40,5 +44,17 @@ public class ProductController : Controller
     {
         _repo.UpdateProduct(product);
         return RedirectToAction("ViewProduct", new { id = product.ProductID });
+    }
+
+    public IActionResult InsertProduct()
+    {
+        var prod = _repo.AssignCategory();
+        return View(prod);
+    }
+
+    public IActionResult InsertProductToDatabase(Product productToInsert)
+    {
+        _repo.InsertProduct(productToInsert);
+        return RedirectToAction("Index");
     }
 }

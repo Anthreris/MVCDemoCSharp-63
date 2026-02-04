@@ -7,9 +7,12 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
-builder.Services.AddScoped<IDbConnection>((s) =>
+var connectionString = builder.Configuration.GetConnectionString("bestbuy")
+                       ?? throw new InvalidOperationException(
+                           "Connection string not found. Add it to appsettings.json");
+builder.Services.AddScoped<IDbConnection>(_ =>
 {
-    IDbConnection conn = new MySqlConnection(builder.Configuration.GetConnectionString("bestbuy"));
+    var conn = new MySqlConnection(connectionString);
     conn.Open();
     return conn;
 });
